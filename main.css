@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300;400&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* section headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+}
+
+/* list styles */
+ul {
+  list-style-type: "›";
+  list-style-position: outside;
+  padding-inline-start: 20px;
+}
+
+/* set a sensible line height for all lists */
+li {
+  line-height: 1.5rem;
+}
+
+/* pad the ul li due to the change in list
+ * styles
+ */
+ul li {
+  padding-left: 10px;
+}
+
+/* table formatting */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* table cells header and body */
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/* table rows */
+tbody tr:nth-child(odd) {
+  background-color: rgb(248, 248, 248);
+}
+
+/* set the width for the main content */
+#container {
+  width: 1024px;
+  margin: auto;
+}
+
+/* settings for the grid container */
+.grid {
+  display: -webkit-box; /* vendor prefox */
+  display: -ms-flexbox; /* vendor prefix */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+/* set padding for all columns */
+[class^="col-"] {
+  padding-left: 10px;
+}
+
+/* percentage of the width of #container */
+.col-1 {
+  width: 8.3583%;
+}
+.col-2 {
+  width: 16.6666%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.3333%;
+}
+.col-5 {
+  width: 41.6666%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.3333%;
+}
+.col-8 {
+  width: 66.6666%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.3333%;
+}
+.col-11 {
+  width: 91.6666%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/* status highlights */
+.success {
+  background-color: #ccffe0;
+  padding: 0 2%;
+  width: 100%;
+}
+.warning {
+  background-color: #fff3a5;
+  padding: 0 2%;
+  width: 100%;
+}
+.error {
+  background-color: #ff999b;
+  padding: 0 2%;
+  width: 100%;
+}
